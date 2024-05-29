@@ -1,0 +1,17 @@
+{
+  "name": "pushing-it.preentrega",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npm test",
+    "test": "npx cypress open --e2e -b chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.3.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
