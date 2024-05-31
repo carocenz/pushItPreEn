@@ -39,18 +39,18 @@ describe("Pre-Entrega", () => {
     //Elegir 1 productos a eleccion y agregarlo 2 veces
     //#1
     buttonPage.validarTitle();
-    productsPage.clickAddToCart(1004);
+    productsPage.clickAddToCart('Sweater rosa');
     buttonPage.validarMessage();
     buttonPage.clickMessageButton();
     //#2
     buttonPage.validarTitle();
-    productsPage.clickAddToCart(1004);
+    productsPage.clickAddToCart('Sweater rosa');
     buttonPage.validarMessage();
     buttonPage.clickMessageButton();
 
     //Elegir otro producto a eleccion y agregarlo 1 vez
     //#1
-    productsPage.clickAddToCart(1001);
+    productsPage.clickAddToCart('Zapatillas Azules');
     buttonPage.validarMessage();
     buttonPage.clickMessageButton();
     cy.xpath("//h2[@id='title' and text()='Products']", {
