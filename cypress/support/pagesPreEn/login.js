@@ -1,24 +1,24 @@
 export class LogInPage {
     constructor() {
-      this.dblClickLogIn = "//span[text()='Iniciá sesión']";
-      this.userInput = "//input[@id='user']";
-      this.passInput = "//input[@id='pass']";
-      this.logInButton = "//button[starts-with(@type,'subm')]";
+      this.dblClickLogIn = 'span:contains("Iniciá sesión")';
+      this.userInput = 'input#user';
+      this.passInput = 'input#pass';
+      this.logInButton = 'button[type^="subm"]';
     }
   
     clickIniciaSesion() {
-      cy.xpath(this.dblClickLogIn).dblclick();
+      cy.get(this.dblClickLogIn).dblclick();
     }
   
     escribirUsuario(usuario) {
-      cy.xpath(this.userInput).type(usuario);
+      cy.get(this.userInput).type(usuario);
     }
   
     escribirContraseña(contraseña) {
-      cy.xpath(this.passInput).type(contraseña);
+      cy.get(this.passInput).type(contraseña);
     }
   
     clickLogIn() {
-      cy.xpath(this.logInButton).click();
+      cy.get(this.logInButton).click();
     }
   }

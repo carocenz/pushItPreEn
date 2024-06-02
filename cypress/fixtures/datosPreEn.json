@@ -7,15 +7,15 @@
     "shoppingCart": [
         {
           "productName": "Sweater rosa",
-          "unitPrice": "$14.86",
-          "productAmount": "2",
-          "totalPrice": "$29.72"
+          "unitPrice": 14.86,
+          "productAmount": 2,
+          "totalPrice": 29.72
         },
         {
           "productName": "Zapatillas Azules",
-          "unitPrice": "$30.33",
-          "productAmount": "1",
-          "totalPrice": "$30.33"
+          "unitPrice": 30.33,
+          "productAmount": 1,
+          "totalPrice": 30.33
         }
       ]
 }
